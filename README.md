@@ -56,7 +56,7 @@ The **Elbow Method** was employed to determine the optimal number of clusters, r
 <image src = "https://github.com/user-attachments/assets/817feb9c-8c40-41e5-a3bc-3c822bed87ce" width="500" height="400">
 
 
-![image](https://github.com/user-attachments/assets/588b5a2f-f8d7-4afb-ad9a-7318e3dd13ba)
+![image](https://github.com/user-attachments/assets/8369a14e-9b5c-4b4b-9059-5004e6b98dd8)
 
 
 **Cluster Averages**  
