@@ -36,6 +36,7 @@ After the cleaning process, the dataset was reduced to **797,885** rows and **8*
 ## Project Overview  
 
 ### Feature Engineering 
+
 Feature engineering was a critical step to derive meaningful insights and facilitate RFM analysis. The following new features were created:
 - **Total Spend:** Calculated as "Quantity * Price" for each transaction. This metric provided a measure of the monetary value of each purchase.
 - **Recency:** Measured as the number of days since the customer’s last purchase, providing insights into their engagement recency.
@@ -44,7 +45,8 @@ Feature engineering was a critical step to derive meaningful insights and facili
   
 These features were aggregated into a new dataframe with **5,942** unique customers and the following columns: **Customer ID, Recency, Frequency, and Monetary.**
    
-### Outlier Detection and Removal
+### Outlier Detection and Removal  
+
 Outliers were detected in the Recency, Frequency, and Monetary features using **boxplots** and statistical methods like the **Interquartile Range (IQR)**. Specifically:
 - Recency Outliers: Customers with excessively high recency values were identified as inactive and excluded to focus on engaged customers.
 - Frequency and Monetary Outliers: Extreme values were capped to avoid skewing the clustering process while retaining the integrity of the data.
@@ -67,6 +69,7 @@ The **Elbow Method** was employed to determine the optimal number of clusters, r
 
 
 **RFM Scoring**  
+
 Customers were assigned RFM scores based on quartile distributions:
 - **R_Score:** Recency scores were assigned such that higher values indicated more recent purchases.
 - **F_Score:** Frequency scores reflected the number of purchases, with higher values for frequent buyers.
@@ -77,6 +80,7 @@ An overall RFM_Score was computed as the sum of R, F, and M scores, facilitating
 ### Customer Segmentation
 
 **Customer Segments**  
+
 Based on clustering and RFM scores, customers were categorized as follows:  
 - VIP: RFM Score ≥ 10.
 - Loyal: RFM Score ≥ 7 and < 10.
@@ -84,6 +88,7 @@ Based on clustering and RFM scores, customers were categorized as follows:
 - Lost: RFM Score < 4.
 
 **Customer Characteristics**  
+
 VIP customers exhibited the lowest recency, highest frequency, and monetary value. Loyal customers displayed moderate levels across all metrics, representing steady engagement. At Risk customers showed infrequent purchases with higher recency values, while Lost customers had the least engagement and spending.
 
 ![image](https://github.com/user-attachments/assets/f05a3ba0-bb78-4e41-879e-3d8fe5151275)
@@ -120,6 +125,6 @@ VIP customers exhibited the lowest recency, highest frequency, and monetary valu
 2. Explore advanced clustering techniques or machine learning models for improved segmentation.  
    
 ## Appendices
-Raw Data - [Excel_files](https://github.com/liyapaul24/Customer_Segmentation-RFM_Analysis/tree/main/Data)
-Code Snippets - [Python_code](https://github.com/liyapaul24/Customer_Segmentation-RFM_Analysis/blob/main/Src/Customer%20segmentation_RFM%20Analysis.ipynb)
+Raw Data - [Excel_files](https://github.com/liyapaul24/Customer_Segmentation-RFM_Analysis/tree/main/Data)  
+Code Snippets - [Python_code](https://github.com/liyapaul24/Customer_Segmentation-RFM_Analysis/blob/main/Src/Customer%20segmentation_RFM%20Analysis.ipynb)  
 Visualizations - [Charts](https://github.com/liyapaul24/Customer_Segmentation-RFM_Analysis/tree/main/Visualization)
