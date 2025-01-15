@@ -80,7 +80,8 @@ VIP customers exhibited the lowest recency, highest frequency, and monetary valu
 
 **Customer Counts**  
 
-![image](https://github.com/user-attachments/assets/8ea9f417-5ef1-4537-b2a2-a62dc6ded172)
+![image](https://github.com/user-attachments/assets/e27c2a1e-8e93-45fa-8527-075f0a5bf88a)
+
 
 **Average RFM Scores by Segments**  
 
