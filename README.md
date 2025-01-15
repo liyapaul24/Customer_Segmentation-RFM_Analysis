@@ -61,8 +61,10 @@ The Elbow Method was employed to determine the optimal number of clusters, resul
 - **Cluster 1 (Mid-Value):** Customers with moderate recency, frequency, and monetary value.
 - **Cluster 2 (High-Value):** Customers with low recency, high frequency, and high monetary value.
 
-**Cluster Averages**
+**Cluster Averages**  
+
 ![image](https://github.com/user-attachments/assets/9e254c38-470e-4a8e-8a6a-6597eb7ea9db)
+
 
 #### Customer Segmentation
 
@@ -77,9 +79,11 @@ Based on clustering and RFM scores, customers were categorized as follows:
 VIP customers exhibited the lowest recency, highest frequency, and monetary value. Loyal customers displayed moderate levels across all metrics, representing steady engagement. At Risk customers showed infrequent purchases with higher recency values, while Lost customers had the least engagement and spending.
 
 **Customer Counts**  
+
 ![image](https://github.com/user-attachments/assets/8ea9f417-5ef1-4537-b2a2-a62dc6ded172)
 
-**Average RFM Scores by Category**
+**Average RFM Scores by Category**  
+
 ![image](https://github.com/user-attachments/assets/9e424a60-db93-4578-b907-738fb8c1339f)  
 
 ### Key Insights
