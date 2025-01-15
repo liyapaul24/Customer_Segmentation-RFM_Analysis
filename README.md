@@ -1,10 +1,14 @@
 # Customer_Segmentation-RFM_Analysis
-Project to identify most valuable customer using RFM analysis
 
-### Table of Contents
+## Table of Contents
 - [Executive Summary](#executive-summary)
 - [Introduction](#Introduction)
-- [Dataset Overview](#Dataset-Overview)
+- [Dataset](#Dataset)
+- [Project Overview](#Project-Overview)
+  - [Feature Engineering](#Feature-Engineering)
+  - [Outlier Detection and Removal](#Outlier-Detection-and-Removal)
+  - [Clustering and RFM Scoring ](#Clustering-and-RFM-Scoring)
+  - [Customer Segmentation](#Customer-Segmentation)
 - [Dashboard Design](#Dashboard-Design)
 - [Key Insights](#Key-Insights)
 - [Recommendations](#Recommendations)
@@ -12,15 +16,15 @@ Project to identify most valuable customer using RFM analysis
 - [Future Work](#Future-Work)
 - [Appendices](#Appendices)
   
-### Executive Summary
+## Executive Summary
 This report provides a comprehensive analysis of customer segmentation using RFM (Recency, Frequency, Monetary) Analysis. By leveraging a dataset of customer transactions, we performed data cleaning, feature engineering, and clustering to classify customers into distinct categories based on their purchasing behavior. The insights derived from this analysis are instrumental in enhancing customer retention strategies, targeting high-value customers, and improving overall business performance.
 
-### Introduction
+## Introduction
 **Objective:** The primary objective of this analysis is to segment customers based on their purchasing behavior using RFM Analysis, enabling data-driven decision-making for targeted marketing strategies and improved customer engagement.  
 **Audience:** This report is intended for business stakeholders, marketing teams, and data analysts who are focused on customer retention, loyalty programs, and revenue optimization.  
 **Scope:** The scope of this analysis includes cleaning and preprocessing the raw transaction data, engineering relevant features, performing RFM scoring, applying clustering techniques, and categorizing customers into actionable segments. The analysis excludes external factors such as market trends or competitor data.
 
-### Dataset Overview 
+## Dataset  
 The initial dataset comprised **1,067,371** rows and **8** columns, containing transactional information such as Invoice, StockCode, Description, Quantity, InvoiceDate, Price, Customer ID, and Country. The data underwent a thorough cleaning process to ensure accuracy and relevance for analysis.
 Key steps in the cleaning process included:
 - **Handling missing values:** Rows with missing Customer IDs were dropped, as this field is critical for analysis.
@@ -28,8 +32,10 @@ Key steps in the cleaning process included:
 - **Filtering out garbage or irrelevant data:** Enhanced data quality.
 
 After the cleaning process, the dataset was reduced to **797,885** rows and **8** columns. This refined dataset served as the foundation for feature engineering and analysis.
-     
-#### Feature Engineering 
+
+## Project Overview  
+
+### Feature Engineering 
 Feature engineering was a critical step to derive meaningful insights and facilitate RFM analysis. The following new features were created:
 - **Total Spend:** Calculated as "Quantity * Price" for each transaction. This metric provided a measure of the monetary value of each purchase.
 - **Recency:** Measured as the number of days since the customer’s last purchase, providing insights into their engagement recency.
@@ -38,14 +44,14 @@ Feature engineering was a critical step to derive meaningful insights and facili
   
 These features were aggregated into a new dataframe with **5,942** unique customers and the following columns: **Customer ID, Recency, Frequency, and Monetary.**
    
-#### Outlier Detection and Removal
+### Outlier Detection and Removal
 Outliers were detected in the Recency, Frequency, and Monetary features using **boxplots** and statistical methods like the **Interquartile Range (IQR)**. Specifically:
 - Recency Outliers: Customers with excessively high recency values were identified as inactive and excluded to focus on engaged customers.
 - Frequency and Monetary Outliers: Extreme values were capped to avoid skewing the clustering process while retaining the integrity of the data.
 
 This ensured a robust dataset for segmentation, minimizing the impact of anomalies.
 
-#### Clustering and RFM Scoring   
+### Clustering and RFM Scoring   
 
 **Clustering**  
 
@@ -68,7 +74,7 @@ Customers were assigned RFM scores based on quartile distributions:
 
 An overall RFM_Score was computed as the sum of R, F, and M scores, facilitating a comprehensive view of customer behavior.
 
-#### Customer Segmentation
+### Customer Segmentation
 
 **Customer Segments**  
 Based on clustering and RFM scores, customers were categorized as follows:  
@@ -88,7 +94,7 @@ VIP customers exhibited the lowest recency, highest frequency, and monetary valu
 ![image](https://github.com/user-attachments/assets/81095522-3297-4d78-ac9c-7eaaa0f16927)
 
 
-### Key Insights
+## Key Insights
 
 1. **VIP Customers**: Comprising **28%** of the total customer base (1,683 out of 5,942), VIPs generate an average monetary value of **$3,467.16**, contributing significantly to overall revenue. They exhibit the lowest recency (avg **35 days**) and highest frequency (avg **12 purchases**), highlighting consistent and high-value engagement.  
 2. **Loyal Customers:** Comprising **27%** of the customer base (1,597 customers), loyal customers generate an average monetary value of **$1,268.11**. Their moderate recency (avg **131 days**) and frequency (avg **5 purchases**) make them ideal candidates for upselling and loyalty programs.  
@@ -96,7 +102,7 @@ VIP customers exhibited the lowest recency, highest frequency, and monetary valu
 4. **Lost Customers:** Representing **12%** of the customer base (705 customers), this group contributes a minimal average monetary value of **$111.91**. However, they present an opportunity to analyze reasons for disengagement and implement targeted revival campaigns.
 5. **Monetary Value Distribution:** Across all segments, there is a clear distinction in spending patterns. High-Value customers dominate with **$4,044.40** average monetary value, whereas At Mid-Value and Low-Value customers represent areas for growth with **$950.24** and **$493.72**, respectively.
 
-### Recommendations  
+## Recommendations  
 
 1. **Retain High-Value Customers:** Offer personalized rewards, VIP-only events, and early access to new products to sustain their loyalty and high spending levels.  
 2. **Re-engage At Risk Customers:** Develop tailored email campaigns, discounts, and incentives to encourage repeat purchases. Highlight products or services aligned with their purchase history.  
@@ -104,15 +110,16 @@ VIP customers exhibited the lowest recency, highest frequency, and monetary valu
 4. **Enhance Loyalty Programs:** Reward consistent engagement among loyal customers with points-based systems, tiered rewards, and exclusive benefits to strengthen long-term relationships.  
 5. **Leverage Data-Driven Insights:** Continuously monitor and evaluate customer segments to refine marketing strategies and improve customer lifetime value (CLV).  
    
-### Challenges and Limitations
+## Challenges and Limitations
 1. The analysis relied solely on transactional data, excluding external factors such as market trends or seasonal effects.  
 2. Missing values and outliers required significant cleaning efforts, which may have led to the exclusion of potentially valuable data.  
 3. Clustering results are influenced by the choice of features and scaling methods.  
    
-### Future Work
+## Future Work
 1. Incorporate additional data sources such as customer demographics or social media interactions to enrich the analysis.  
 2. Explore advanced clustering techniques or machine learning models for improved segmentation.  
    
-### Appendices
-Code Snippets
-Visualizations
+## Appendices
+Raw Data - [Excel_files](https://github.com/liyapaul24/Customer_Segmentation-RFM_Analysis/tree/main/Data)
+Code Snippets - [Python_code](https://github.com/liyapaul24/Customer_Segmentation-RFM_Analysis/blob/main/Src/Customer%20segmentation_RFM%20Analysis.ipynb)
+Visualizations - [Charts](https://github.com/liyapaul24/Customer_Segmentation-RFM_Analysis/tree/main/Visualization)
