@@ -56,7 +56,7 @@ Customers were assigned RFM scores based on quartile distributions:
 An overall RFM_Score was computed as the sum of R, F, and M scores, facilitating a comprehensive view of customer behavior.
 
 **Clustering**  
-The Elbow Method was employed to determine the optimal number of clusters, resulting in 3 distinct groups. K-means clustering was then applied, yielding the following segments:
+The **Elbow Method** was employed to determine the optimal number of clusters, resulting in 3 distinct groups. **K-means clustering** was then applied, yielding the following segments:
 - **Cluster 0 (Low-Value):** Customers with high recency, low frequency, and low monetary value.
 - **Cluster 1 (Mid-Value):** Customers with moderate recency, frequency, and monetary value.
 - **Cluster 2 (High-Value):** Customers with low recency, high frequency, and high monetary value.
@@ -68,7 +68,7 @@ The Elbow Method was employed to determine the optimal number of clusters, resul
 
 #### Customer Segmentation
 
-**Categories**  
+**Customer Segments**  
 Based on clustering and RFM scores, customers were categorized as follows:  
 - VIP: RFM Score ≥ 10.
 - Loyal: RFM Score ≥ 7 and < 10.
@@ -82,21 +82,35 @@ VIP customers exhibited the lowest recency, highest frequency, and monetary valu
 
 ![image](https://github.com/user-attachments/assets/8ea9f417-5ef1-4537-b2a2-a62dc6ded172)
 
-**Average RFM Scores by Category**  
+**Average RFM Scores by Segments**  
 
 ![image](https://github.com/user-attachments/assets/9e424a60-db93-4578-b907-738fb8c1339f)  
 
 ### Key Insights
 
-### Recommendations
+1. **VIP Customers**: Comprising **28%** of the total customer base (1,683 out of 5,942), VIPs generate an average monetary value of **$3,467.16**, contributing significantly to overall revenue. They exhibit the lowest recency (avg **35 days**) and highest frequency (avg **12 purchases**), highlighting consistent and high-value engagement.  
+2. **Loyal Customers:** Comprising **27%** of the customer base (1,597 customers), loyal customers generate an average monetary value of **$1,268.11**. Their moderate recency (avg **131 days**) and frequency (avg **5 purchases**) make them ideal candidates for upselling and loyalty programs.  
+3. **At Risk Customers:** The largest segment, **33%** with 1,957 customers, contributing an average monetary value of **$465.24**. Their relatively high recency (avg **278 days**) and low frequency (avg **2 purchases**) indicate a critical need for re-engagement strategies.
+4. **Lost Customers:** Representing **12%** of the customer base (705 customers), this group contributes a minimal average monetary value of **$111.91**. However, they present an opportunity to analyze reasons for disengagement and implement targeted revival campaigns.
+5. **Monetary Value Distribution:** Across all segments, there is a clear distinction in spending patterns. High-Value customers dominate with **$4,044.40** average monetary value, whereas At Mid-Value and Low-Value customers represent areas for growth with **$950.24** and **$493.72**, respectively.
 
+### Recommendations  
+
+1. **Retain High-Value Customers:** Offer personalized rewards, VIP-only events, and early access to new products to sustain their loyalty and high spending levels.  
+2. **Re-engage At Risk Customers:** Develop tailored email campaigns, discounts, and incentives to encourage repeat purchases. Highlight products or services aligned with their purchase history.  
+3. **Revive Lost Customers:** Conduct surveys or outreach campaigns to understand reasons for disengagement. Offer reactivation discounts or limited-time offers to reignite their interest.  
+4. **Enhance Loyalty Programs:** Reward consistent engagement among loyal customers with points-based systems, tiered rewards, and exclusive benefits to strengthen long-term relationships.  
+5. **Leverage Data-Driven Insights:** Continuously monitor and evaluate customer segments to refine marketing strategies and improve customer lifetime value (CLV).  
    
 ### Challenges and Limitations
-1. **Limited Scope**: The dashboards exclude external factors, such as market trends or competitor analysis.
-2. **Lagging Indicators**: Metrics like activation rates and delinquency rates are historical and may not reflect real-time changes.
+1. The analysis relied solely on transactional data, excluding external factors such as market trends or seasonal effects.  
+2. Missing values and outliers required significant cleaning efforts, which may have led to the exclusion of potentially valuable data.  
+3. Clustering results are influenced by the choice of features and scaling methods.  
    
 ### Future Work
-1. **Predictive Analytics**: Use machine learning models to forecast key metrics such as revenue, delinquency rates, and customer churn.
-2. **Enhanced Visualizations**: Add drill-through functionality and advanced filtering options in dashboards.
+1. Incorporate additional data sources such as customer demographics or social media interactions to enrich the analysis.  
+2. Explore advanced clustering techniques or machine learning models for improved segmentation.  
    
 ### Appendices
+Code Snippets
+Visualizations
