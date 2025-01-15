@@ -53,7 +53,8 @@ The **Elbow Method** was employed to determine the optimal number of clusters, r
 - **Cluster 1 (Mid-Value):** Customers with moderate recency, frequency, and monetary value.
 - **Cluster 2 (High-Value):** Customers with low recency, high frequency, and high monetary value.
 
-![image](https://github.com/user-attachments/assets/4025a00a-e30f-4006-999e-5ebaaf8a2bdf)  
+![image](https://github.com/user-attachments/assets/817feb9c-8c40-41e5-a3bc-3c822bed87ce)
+
 
 ![image](https://github.com/user-attachments/assets/588b5a2f-f8d7-4afb-ad9a-7318e3dd13ba)
 
