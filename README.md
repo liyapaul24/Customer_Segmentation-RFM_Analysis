@@ -29,7 +29,7 @@ Key steps in the cleaning process included:
 
 After the cleaning process, the dataset was reduced to **797,885** rows and **8** columns. This refined dataset served as the foundation for feature engineering and analysis.
      
-## Feature Engineering 
+#### Feature Engineering 
 Feature engineering was a critical step to derive meaningful insights and facilitate RFM analysis. The following new features were created:
 - **Total Spend:** Calculated as "Quantity * Price" for each transaction. This metric provided a measure of the monetary value of each purchase.
 - **Recency:** Measured as the number of days since the customer’s last purchase, providing insights into their engagement recency.
@@ -38,16 +38,16 @@ Feature engineering was a critical step to derive meaningful insights and facili
   
 These features were aggregated into a new dataframe with **5,942** unique customers and the following columns: Customer ID, Recency, Frequency, and Monetary.
    
-## Outlier Detection and Removal
+#### Outlier Detection and Removal
 Outliers were detected in the Recency, Frequency, and Monetary features using **boxplots** and statistical methods like the **Interquartile Range (IQR)**. Specifically:
 - Recency Outliers: Customers with excessively high recency values were identified as inactive and excluded to focus on engaged customers.
 - Frequency and Monetary Outliers: Extreme values were capped to avoid skewing the clustering process while retaining the integrity of the data.
 
 This ensured a robust dataset for segmentation, minimizing the impact of anomalies.
 
-## RFM Scoring and Clustering
+#### RFM Scoring and Clustering
 
-# **RFM Scoring**
+**RFM Scoring**
 Customers were assigned RFM scores based on quartile distributions:
 - **R_Score:** Recency scores were assigned such that higher values indicated more recent purchases.
 - **F_Score:Frequency scores reflected the number of purchases, with higher values for frequent buyers.
@@ -55,7 +55,7 @@ Customers were assigned RFM scores based on quartile distributions:
 
 An overall RFM_Score was computed as the sum of R, F, and M scores, facilitating a comprehensive view of customer behavior.
 
-# **Clustering**
+**Clustering**
 ### Key Insights
 
 ### Recommendations
