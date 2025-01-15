@@ -48,6 +48,7 @@ This ensured a robust dataset for segmentation, minimizing the impact of anomali
 #### Clustering and RFM Scoring   
 
 **Clustering**  
+
 The **Elbow Method** was employed to determine the optimal number of clusters, resulting in 3 distinct groups. **K-means clustering** was then applied, yielding the following segments:
 - **Cluster 0 (Low-Value):** Customers with high recency, low frequency, and low monetary value.
 - **Cluster 1 (Mid-Value):** Customers with moderate recency, frequency, and monetary value.
@@ -58,10 +59,6 @@ The **Elbow Method** was employed to determine the optimal number of clusters, r
 
 ![image](https://github.com/user-attachments/assets/8369a14e-9b5c-4b4b-9059-5004e6b98dd8)
 
-
-**Cluster Averages**  
-
-![image](https://github.com/user-attachments/assets/9e254c38-470e-4a8e-8a6a-6597eb7ea9db)
 
 **RFM Scoring**  
 Customers were assigned RFM scores based on quartile distributions:
@@ -83,12 +80,18 @@ Based on clustering and RFM scores, customers were categorized as follows:
 **Customer Characteristics**  
 VIP customers exhibited the lowest recency, highest frequency, and monetary value. Loyal customers displayed moderate levels across all metrics, representing steady engagement. At Risk customers showed infrequent purchases with higher recency values, while Lost customers had the least engagement and spending.
 
+![image](https://github.com/user-attachments/assets/f05a3ba0-bb78-4e41-879e-3d8fe5151275)
+
+
 **Customer Counts**  
 
 ![image](https://github.com/user-attachments/assets/e27c2a1e-8e93-45fa-8527-075f0a5bf88a)
 
 
 **Average RFM Scores by Segments**  
+
+![image](https://github.com/user-attachments/assets/81095522-3297-4d78-ac9c-7eaaa0f16927)
+
 
 ![image](https://github.com/user-attachments/assets/9e424a60-db93-4578-b907-738fb8c1339f)  
 
