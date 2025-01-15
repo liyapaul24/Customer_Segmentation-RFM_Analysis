@@ -45,7 +45,22 @@ Outliers were detected in the Recency, Frequency, and Monetary features using **
 
 This ensured a robust dataset for segmentation, minimizing the impact of anomalies.
 
-#### RFM Scoring and Clustering
+#### Clustering and RFM Scoring   
+
+**Clustering**  
+The **Elbow Method** was employed to determine the optimal number of clusters, resulting in 3 distinct groups. **K-means clustering** was then applied, yielding the following segments:
+- **Cluster 0 (Low-Value):** Customers with high recency, low frequency, and low monetary value.
+- **Cluster 1 (Mid-Value):** Customers with moderate recency, frequency, and monetary value.
+- **Cluster 2 (High-Value):** Customers with low recency, high frequency, and high monetary value.
+
+![image](https://github.com/user-attachments/assets/4025a00a-e30f-4006-999e-5ebaaf8a2bdf)  
+
+![image](https://github.com/user-attachments/assets/588b5a2f-f8d7-4afb-ad9a-7318e3dd13ba)
+
+
+**Cluster Averages**  
+
+![image](https://github.com/user-attachments/assets/9e254c38-470e-4a8e-8a6a-6597eb7ea9db)
 
 **RFM Scoring**  
 Customers were assigned RFM scores based on quartile distributions:
@@ -54,17 +69,6 @@ Customers were assigned RFM scores based on quartile distributions:
 - **M_Score:** Monetary scores captured total spend, rewarding high-value customers.
 
 An overall RFM_Score was computed as the sum of R, F, and M scores, facilitating a comprehensive view of customer behavior.
-
-**Clustering**  
-The **Elbow Method** was employed to determine the optimal number of clusters, resulting in 3 distinct groups. **K-means clustering** was then applied, yielding the following segments:
-- **Cluster 0 (Low-Value):** Customers with high recency, low frequency, and low monetary value.
-- **Cluster 1 (Mid-Value):** Customers with moderate recency, frequency, and monetary value.
-- **Cluster 2 (High-Value):** Customers with low recency, high frequency, and high monetary value.
-
-**Cluster Averages**  
-
-![image](https://github.com/user-attachments/assets/9e254c38-470e-4a8e-8a6a-6597eb7ea9db)
-
 
 #### Customer Segmentation
 
