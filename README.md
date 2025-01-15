@@ -54,7 +54,7 @@ The **Elbow Method** was employed to determine the optimal number of clusters, r
 - **Cluster 1 (Mid-Value):** Customers with moderate recency, frequency, and monetary value.
 - **Cluster 2 (High-Value):** Customers with low recency, high frequency, and high monetary value.
 
-<image src = "https://github.com/user-attachments/assets/817feb9c-8c40-41e5-a3bc-3c822bed87ce" width="500" height="400">
+<image src = "https://github.com/user-attachments/assets/817feb9c-8c40-41e5-a3bc-3c822bed87ce" width="550" height="400">
 
 
 ![image](https://github.com/user-attachments/assets/8369a14e-9b5c-4b4b-9059-5004e6b98dd8)
@@ -83,17 +83,10 @@ VIP customers exhibited the lowest recency, highest frequency, and monetary valu
 ![image](https://github.com/user-attachments/assets/f05a3ba0-bb78-4e41-879e-3d8fe5151275)
 
 
-**Customer Counts**  
-
-![image](https://github.com/user-attachments/assets/e27c2a1e-8e93-45fa-8527-075f0a5bf88a)
-
-
 **Average RFM Scores by Segments**  
 
 ![image](https://github.com/user-attachments/assets/81095522-3297-4d78-ac9c-7eaaa0f16927)
 
-
-![image](https://github.com/user-attachments/assets/9e424a60-db93-4578-b907-738fb8c1339f)  
 
 ### Key Insights
 
