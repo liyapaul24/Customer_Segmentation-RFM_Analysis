@@ -125,6 +125,6 @@ VIP customers exhibited the lowest recency, highest frequency, and monetary valu
 2. Explore advanced clustering techniques or machine learning models for improved segmentation.  
    
 ## Appendices
-Raw Data - [Excel_files](https://github.com/liyapaul24/Customer_Segmentation-RFM_Analysis/tree/main/Data)  
+Raw Datas - [Excel_files](https://github.com/liyapaul24/Customer_Segmentation-RFM_Analysis/tree/main/Data)  
 Code Snippets - [Python_code](https://github.com/liyapaul24/Customer_Segmentation-RFM_Analysis/blob/main/Src/Customer%20segmentation_RFM%20Analysis.ipynb)  
 Visualizations - [Charts](https://github.com/liyapaul24/Customer_Segmentation-RFM_Analysis/tree/main/Visualization)
